@@ -225,8 +225,16 @@ __declspec(dllexport) __wchar_t getDotNetContainerCharValue(void *ptr) {
   return *safe_cast<System::Char ^>(static_cast<DotNetContainer *>(ptr)->getContainerObject());
 }
 
+__declspec(dllexport) short getDotNetContainerShortValue(void* ptr) {
+    return *safe_cast<System::Int16^>(static_cast<DotNetContainer*>(ptr)->getContainerObject());
+}
+
 __declspec(dllexport) int getDotNetContainerIntValue(void *ptr) {
-  return *safe_cast<System::Int32 ^>(static_cast<DotNetContainer *>(ptr)->getContainerObject());
+  return *safe_cast<System::Int32^>(static_cast<DotNetContainer *>(ptr)->getContainerObject());
+}
+
+__declspec(dllexport) long getDotNetContainerLongValue(void* ptr) {
+    return *safe_cast<System::Int64^>(static_cast<DotNetContainer*>(ptr)->getContainerObject());
 }
 
 __declspec(dllexport) bool getDotNetContainerBooleanValue(void *ptr) {
