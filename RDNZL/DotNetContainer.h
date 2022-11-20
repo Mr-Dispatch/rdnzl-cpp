@@ -78,7 +78,10 @@ extern "C" {
   __declspec(dllexport) void getDotNetContainerObjectAsString(void *ptr, __wchar_t *s);
   __declspec(dllexport) short getDotNetContainerShortValue(void* ptr);
   __declspec(dllexport) int getDotNetContainerIntValue(void *ptr);
-  __declspec(dllexport) long getDotNetContainerLongValue(void* ptr);
+  __declspec(dllexport) long long getDotNetContainerLongValue(void* ptr);
+  __declspec(dllexport) unsigned  short getDotNetContainerUnsignedShortValue(void* ptr);
+  __declspec(dllexport) unsigned int getDotNetContainerUnsignedIntValue(void* ptr);
+  __declspec(dllexport) unsigned long long getDotNetContainerUnsignedLongValue(void* ptr);
   __declspec(dllexport) __wchar_t getDotNetContainerCharValue(void *ptr);
   __declspec(dllexport) bool getDotNetContainerBooleanValue(void *ptr);
   __declspec(dllexport) double getDotNetContainerDoubleValue(void *ptr);
